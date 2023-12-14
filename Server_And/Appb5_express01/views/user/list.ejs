@@ -1,0 +1,32 @@
+<%- include('../inc/header')%>
+<h1>Danh Sách tài khoản</h1>
+<%if(msg.length>0){%>
+    <h3><%= msg %></h3>
+<%}%>
+<%if(listUser){%>
+    //In danh sách
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <% listUser.forEach((item)=>{%>
+            <tr>
+                <td><%=item._id%></td>
+                <td><%=item.username%></td>
+                <td><%=item.email%></td>
+                <td>
+                    <a href="/user/edit/<%=item._id%>">Sửa</a> &nbsp; | &nbsp;
+                    <a href="/user/delete/<%=item._id%>">Xóa</a>
+
+                </td>
+            </tr>
+        <%})%>
+
+    </table>
+<%}else {%>
+    <h3>Không có dữ liệu</h3>
+<%}%>
+<%- include('../inc/footer')%>

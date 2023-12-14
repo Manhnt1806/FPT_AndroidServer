@@ -1,0 +1,12 @@
+<%- include('../inc/header')%>
+<h1> Sửa tài khoản</h1>
+<%if(msg.length>0){%>
+    <h3><%= msg%></h3>
+<%}%>
+<form action="" method="post">
+    Username: <input type="text" name="username" value="<%=objU.username%>"/> <br>
+    Password: <input type="password" name="passwd" value=""/> <br>
+    Email: <input type="email" name="email" value="<%=objU.email%>"/> <br>
+    <button type="submit">Update</button>
+</form>
+<%- include('../inc/footer')%>

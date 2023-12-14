@@ -1,0 +1,11 @@
+<%- include('../inc/header')%>
+<%if(msg.length>0){%>
+    Đăng ký thành công
+<%}%>
+<form action="" method="post">
+    Username: <input type="text" name="username"/> <br>
+    Password: <input type="password" name="passwd"/> <br>
+    Email: <input type="email" name="email"/> <br>
+    <button type="submit">Reg</button>
+</form>
+<%- include('../inc/footer')%>

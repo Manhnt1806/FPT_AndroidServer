@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 01</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Shop A</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Lab1.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Users
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" href="#">User</a></li>
+                                <li><a class="dropdown-item" href="#">Group</a></li>
+                                <li><a class="dropdown-item" href="#">Role</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="#">Product</a></li>
+                                <li><a class="dropdown-item" href="#">Category</a></li>
+                                <li><a class="dropdown-item" href="#">Tag</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown3"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Settings
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <li><a class="dropdown-item" href="#">Banner</a></li>
+                                <li><a class="dropdown-item" href="#">Info</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div >
+            <h2>List User</h2>
+        </div>
+
+        <div id="search">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="By Username" aria-label="By Username"
+                    aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="By Email" aria-label="By Email">
+                <input type="text" class="form-control" placeholder="By Group" aria-label="By Group">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+            </div>
+        </div>
+        <a href="Add.html" class="btn btn-primary m-2 bg-black">Add</a>
+
+        <table class="table border">
+            <thead>
+                <tr>
+                    <th scope="col">\</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Fullname</th>
+                    <th scope="col">Group</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>manhnt</td>
+                    <td>manhntph29583@fpt.edu.vn</td>
+                    <td>Nguyễn Thế Manh</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>manhnt</td>
+                    <td>manhntph29583@fpt.edu.vn</td>
+                    <td>Nguyễn Thế Manh</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>manhnt</td>
+                    <td>manhntph29583@fpt.edu.vn</td>
+                    <td>Nguyễn Thế Manh</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>manhnt</td>
+                    <td>manhntph29583@fpt.edu.vn</td>
+                    <td>Nguyễn Thế Manh</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>manhnt</td>
+                    <td>manhntph29583@fpt.edu.vn</td>
+                    <td>Nguyễn Thế Manh</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="tablebot" class="d-flex justify-content-between">
+            <div>Showing 10/10000 items</div>
+            <div class="pagination">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

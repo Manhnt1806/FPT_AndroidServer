@@ -1,0 +1,8 @@
+<%- include('../inc/header') %>
+<h1>Thêm sản phẩm</h1>
+<form action="/sanpham/them-moi" method="post" enctype="multipart/form-data">
+    Tên sản phẩm: <input type="text" name="tenp"><br>
+    Ảnh: <input type="file" name="anh"/><br>
+    <button type="submit">Save</button>
+</form>
+<%- include('../inc/footer') %>
